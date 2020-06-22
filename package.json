@@ -10,7 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "common.js": "^1.1.1",
     "electron": "^9.0.4"
   }
 }
