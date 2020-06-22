@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/photon.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+    <div class="window">
+        <header class="toolbar toolbar-header">
+            <!-- <h1 class="title">My Verify First Electron App</h1> -->
+            <div class="toolbar-actions">
+                <div class="btn-group">
+                  <button class="btn btn-default click-button" id="plus-button">
+                    <span class="icon icon-home-disable icon-plus" ></span>
+                  </button>
+                  <button class="btn btn-default click-button" id="minus-button">
+                    <span class="icon icon-folder-disable icon-minus"></span>
+                  </button>
+                  <!-- <button class="btn btn-default active">
+                    <span class="icon icon-cloud"></span>
+                  </button>
+                  <button class="btn btn-default">
+                    <span class="icon icon-popup"></span>
+                  </button>
+                  <button class="btn btn-default">
+                    <span class="icon icon-shuffle"></span>
+                  </button> -->
+                </div>
+
+                <!-- <button class="btn btn-default">
+                  <span class="icon icon-home icon-text"></span>
+                  Filters
+                </button> -->
+
+                <button class="btn btn-default btn-dropdown-disabled pull-right click-button" id="save-button">
+                  <span class="icon icon-megaphone-disable icon-download icon-text"></span>
+                  <strong>Save</strong>
+                </button>
+              </div>
+        </header>
+
+        <div class="window-content">
+            <textarea id="main-body"></textarea>
+        </div>
+
+        <footer class="toolbar toolbar-footer">
+          <h1 class="title" id="footer">Footer</h1>
+        </footer>
+
+      </div>
+    <script>
+        const electron = require('electron');
+        const { ipcRenderer } = electron;
+    </script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
+ </body>
+</html>
